@@ -1,0 +1,86 @@
+$empty-color: #ddd;
+$full-color: #955;
+
+// pie chart styling/logic taken from https://www.smashingmagazine.com/2015/07/designing-simple-pie-charts-with-css/
+
+@keyframes spin {
+  to { transform: rotate(.5turn); }
+}
+
+@keyframes bg {
+  50% { background: $full-color; }
+}
+
+
+.clock {
+  width: 100px; height: 100px;
+  margin: 19px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: $empty-color;
+  position: relative;
+  background-image:
+  linear-gradient(to right, transparent 50%, $full-color 0);
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    display: block;
+    margin-left: 50%;
+    height: 100%;
+    border-radius: 0 100% 100% 0 / 50%;
+    background-color: inherit;
+    transform-origin: left;
+    animation: spin 50s linear infinite,
+              bg 100s step-end infinite;
+    animation-delay: inherit;
+    animation-play-state: paused;
+  }
+}
+
+.crossbar {
+  height: 100px; width: 2px;
+  margin: 0 auto;
+  background: black;
+  position: absolute;
+  left: 49px;
+  top: 0;
+}
+
+.r45 {
+  transform: rotate(45deg);
+  width: 1.4px;
+}
+.r90 {
+  transform: rotate(90deg);
+}
+.r135 {
+  transform: rotate(135deg);
+  width: 1.4px;
+}
+
+.r36 {
+  transform: rotate(36deg);
+  width: 1.7px;
+}
+.r72 {
+  transform: rotate(72deg);
+  width: 1.7px;
+}
+.r108 {
+  transform: rotate(108deg);
+  width: 1.7px;
+}
+.r144 {
+  transform: rotate(144deg);
+  width: 1.7px;
+}
+
+.r60 {
+  transform: rotate(60deg);
+  width: 1.7px;
+}
+.r120 {
+  transform: rotate(120deg);
+  width: 1.7px;
+}

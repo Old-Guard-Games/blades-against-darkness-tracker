@@ -1,0 +1,37 @@
+nav {
+  height: 60px;
+  background: #333;
+  color: white;
+  padding: 10px;
+  
+  ul {
+    margin: 15px 0;
+    padding: 0 0 0 20px;
+  }
+
+  li {
+    display: inline-block;
+    padding: 0 15px;
+    border-right: 1px solid #999;
+
+    &:first-child {
+      padding-left: 0px;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  a, a:active, a:visited {
+    display: inline-block;
+    // padding-top: 11px;
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
+
+    &.active {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,24 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from 'react-router-dom';
+
 import './App.css';
+import { Nav } from './app/nav';
+
+import { FactionList } from './features/factions/FactionList';
+import { ZoneList } from './features/zones/ZoneList';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Nav />
+        <div id='container'>
+          <Routes>
+            <Route
+              path="/"
+              element={ <FactionList /> }
+              />
+            <Route
+              path="/zones"
+              element={ <ZoneList /> }
+              />
+            <Route
+              path="*"
+              element={
+                <Navigate to="/" replace />
+              }
+              />
+            
+          </Routes>
+        </div>
+      </Router>
     </div>
   );
 }

@@ -1,0 +1,31 @@
+.faction {
+  border: 1px solid #888;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+
+  h2 {
+    margin: 0;
+    cursor: pointer;
+  }
+}
+
+.indented {
+  padding-left: 20px;
+}
+
+.downtime-list {
+  border-top: 1px solid #888;
+
+  h3 {
+    cursor: pointer;
+  }
+}
+
+.downtime-activity {
+  border-bottom: 1px dotted #888;
+}
+
+.downtime-activity:last-child {
+  border-bottom: none;
+}

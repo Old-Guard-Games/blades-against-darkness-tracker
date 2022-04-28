@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/blades-against-darkness-tracker/static/css/main.74764b33.css",
-    "main.js": "/blades-against-darkness-tracker/static/js/main.8af77366.js",
+    "main.css": "/blades-against-darkness-tracker/static/css/main.81fde50c.css",
+    "main.js": "/blades-against-darkness-tracker/static/js/main.159d4353.js",
     "static/js/787.02e74bc8.chunk.js": "/blades-against-darkness-tracker/static/js/787.02e74bc8.chunk.js",
     "index.html": "/blades-against-darkness-tracker/index.html",
-    "main.74764b33.css.map": "/blades-against-darkness-tracker/static/css/main.74764b33.css.map",
-    "main.8af77366.js.map": "/blades-against-darkness-tracker/static/js/main.8af77366.js.map",
+    "main.81fde50c.css.map": "/blades-against-darkness-tracker/static/css/main.81fde50c.css.map",
+    "main.159d4353.js.map": "/blades-against-darkness-tracker/static/js/main.159d4353.js.map",
     "787.02e74bc8.chunk.js.map": "/blades-against-darkness-tracker/static/js/787.02e74bc8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74764b33.css",
-    "static/js/main.8af77366.js"
+    "static/css/main.81fde50c.css",
+    "static/js/main.159d4353.js"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/blades-against-darkness-tracker/static/css/main.d51e15a2.css",
-    "main.js": "/blades-against-darkness-tracker/static/js/main.e736795a.js",
+    "main.js": "/blades-against-darkness-tracker/static/js/main.bdb89773.js",
     "static/js/787.02e74bc8.chunk.js": "/blades-against-darkness-tracker/static/js/787.02e74bc8.chunk.js",
     "static/media/bandage-roll(1).svg": "/blades-against-darkness-tracker/static/media/bandage-roll(1).3558b7a753f40f2c70c1354e447d1e69.svg",
     "static/media/swap-bag(1).svg": "/blades-against-darkness-tracker/static/media/swap-bag(1).7d80805819e00c69e63b6dd704709130.svg",
@@ -10,11 +10,11 @@
     "index.html": "/blades-against-darkness-tracker/index.html",
     "static/media/torch(1).svg": "/blades-against-darkness-tracker/static/media/torch(1).19e30d9e23dd166dcb509d40e7786b3e.svg",
     "main.d51e15a2.css.map": "/blades-against-darkness-tracker/static/css/main.d51e15a2.css.map",
-    "main.e736795a.js.map": "/blades-against-darkness-tracker/static/js/main.e736795a.js.map",
+    "main.bdb89773.js.map": "/blades-against-darkness-tracker/static/js/main.bdb89773.js.map",
     "787.02e74bc8.chunk.js.map": "/blades-against-darkness-tracker/static/js/787.02e74bc8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d51e15a2.css",
-    "static/js/main.e736795a.js"
+    "static/js/main.bdb89773.js"
   ]
 }

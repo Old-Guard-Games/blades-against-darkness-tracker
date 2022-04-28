@@ -1,0 +1,28 @@
+.gauge {
+  display: flex;
+  align-content: center;
+
+  .pre-post-text {
+    font-style: italic;
+    margin: 0 5px;
+  }
+
+  .pip {
+    display: inline-block;
+    border: 1px solid black;
+    background-color: white;
+    user-select: none;
+    position: relative;
+
+    &.pip-full {
+      background-color: black;
+    }
+
+    &.pip-before div,
+    &.pip-after div {
+      position: absolute;
+    }
+
+
+  }
+}

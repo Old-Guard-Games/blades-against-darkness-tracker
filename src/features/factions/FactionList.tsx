@@ -3,14 +3,11 @@ import './faction.scss';
 import { useSelector } from 'react-redux';
 import { FactionModel } from './Faction.model';
 
-import { Faction } from './Faction.component';
+import { Faction, FactionMenuItem } from './Faction.component';
+import { LeftSelect, LeftSelectProps } from '../../components/LeftSelect';
 
 export const FactionList = () => {
   const factions = useSelector((state: any) => state.factions.data);
-
-  if (!factions || !factions.length) {
-    return (<h1>No factions!</h1>);
-  }
 
   const sorted = factions.slice().sort((a: FactionModel,b: FactionModel) => {
     const trimmedA = a.name.replace('The ','');
@@ -19,14 +16,24 @@ export const FactionList = () => {
       return -1;
     }
     return 1;
-  })
+  });
 
-  const renderedFactions = sorted.map((faction: FactionModel) => (<Faction key={faction.id} faction={faction} />));
+  const menuRender = (item: FactionModel, index: number) => (
+    <FactionMenuItem key={index} faction={item} />
+  )
+
+  const itemRender = (item: FactionModel) => (
+    <Faction faction={item} />
+  )
+
+  const lsProps: LeftSelectProps<FactionModel> = {
+    title: 'Factions',
+    items: sorted,
+    menuRender,
+    itemRender
+  }
 
   return (
-    <div className='faction-list'>
-      <h1>Factions</h1>
-      {renderedFactions}
-    </div>
+    <LeftSelect {...lsProps} />
   )
 }

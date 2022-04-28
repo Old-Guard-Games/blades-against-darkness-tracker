@@ -8,6 +8,7 @@ import './nav.scss';
 export const Nav = () => {
   return (
     <nav>
+      <h1>Blades Against Darkness</h1>
       <ul>
         <NavItem to='/'>Factions</NavItem>
         <NavItem to='/zones'>Zones</NavItem>

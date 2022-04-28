@@ -4,7 +4,7 @@ const WhiteHand: FactionModel = {
   id: 1,
   name: 'The White Hand',
   tier: 1,
-  description: 'A Trau smuggling operation based in the Chimeran Wastes. Led by Nihari Hitan they act as bandits in the underground often extorting tolls for "protection" from people exploring the catacombs. Also known to hire out their services as assassins. It is rumored that they have an on going war with The Falconers who are also known to serve as Copperheads. The White Hand, like many Trau, are also dedicated to keeping any sleeping Witch Kings from waking.  Though,for the White Hand this is only a passing concern.',
+  description: 'A Trau smuggling operation based in the Chimeran Wastes. Led by Nihari Hitan they act as bandits in the underground often extorting tolls for "protection" from people exploring the catacombs. Also known to hire out their services as assassins. It is rumored that they have an on going war with The Falconers who are also known to serve as Copperheads. The White Hand, like many Trau, are also dedicated to keeping any sleeping Witch Kings from waking. Though, for the White Hand this is only a passing concern.',
   npcs: [
     'Nihari (Hardened, cold, family woman)',
     'Lufti Chadrash (Chimera, monster hunter, loremaster)'
@@ -16,6 +16,7 @@ const WhiteHand: FactionModel = {
   relationship: 0,
   downtime: [
     {
+      icon: 'bag',
       name: 'Acquire Asset',
       description: 'Gain use of a rare or powerful asset (keg of gunpowder, specialist hireling, magical scroll, etc.)',
       available: true,
@@ -23,6 +24,7 @@ const WhiteHand: FactionModel = {
       minusOne: ''
     },
     {
+      icon: 'hourglass',
       name: 'Long Term Project',
       description: 'Make a test to make ticks on long term project clock. The number of dice is based on the tools at hand and the action taken 1-3: one segment, 4/5: two segments, 6: three segments, crit: five segments.',
       available: true,
@@ -30,6 +32,7 @@ const WhiteHand: FactionModel = {
       minusOne: 'anything else'
     },
     {
+      icon: 'bandage',
       name: 'Recovery',
       description: 'Get treatment for your harm.  Roll Tier and mark on your healing clock. 1-3: 1, 4/5: 2, 6: 3, Crit: 5',
       available: false,
@@ -37,6 +40,7 @@ const WhiteHand: FactionModel = {
       minusOne: ''
     },
     {
+      icon: 'beer',
       name: 'Indulge Vice',
       description: 'Roll 1d per 3 expended Resist (rounded up). Gain Resist equal to the highest number rolled. Overindulge if you would end up with more than 10 Resist.',
       available: true,
@@ -44,6 +48,7 @@ const WhiteHand: FactionModel = {
       minusOne: 'anything else'
     },
     {
+      icon: 'torch',
       name: 'Reveal Something',
       description: 'Describe a scene that tells us something about your character that fills in details or answers questions, then Mark XP',
       available: true,
@@ -94,6 +99,7 @@ const SilverFlame: FactionModel = {
   relationship: 2,
   downtime: [
     {
+      icon: 'bag',
       name: 'Acquire Asset',
       description: 'Gain use of a rare or powerful asset (keg of gunpowder, specialist hireling, magical scroll, etc.)',
       available: true,
@@ -101,6 +107,7 @@ const SilverFlame: FactionModel = {
       minusOne: 'anything else'
     },
     {
+      icon: 'hourglass',
       name: 'Long Term Project',
       description: 'Make a test to make ticks on long term project clock. The number of dice is based on the tools at hand and the action taken 1-3: one segment, 4/5: two segments, 6: three segments, crit: five segments.',
       available: true,
@@ -108,6 +115,7 @@ const SilverFlame: FactionModel = {
       minusOne: 'anything else'
     },
     {
+      icon: 'bandage',
       name: 'Recovery',
       description: 'Get treatment for your harm.  Roll Tier and mark on your healing clock. 1-3: 1, 4/5: 2, 6: 3, Crit: 5',
       available: true,
@@ -115,13 +123,15 @@ const SilverFlame: FactionModel = {
       minusOne: ''
     },
     {
+      icon: 'beer',
       name: 'Indulge Vice',
       description: 'Roll 1d per 3 expended Resist (rounded up). Gain Resist equal to the highest number rolled. Overindulge if you would end up with more than 10 Resist.',
-      available: false,
+      available: true,
       plusOne: 'weird',
       minusOne: ''
     },
     {
+      icon: 'torch',
       name: 'Reveal Something',
       description: 'Describe a scene that tells us something about your character that fills in details or answers questions, then Mark XP',
       available: true,
@@ -176,6 +186,7 @@ const StrychnineSyndicate: FactionModel = {
   relationship: -1,
   downtime: [
     {
+      icon: 'bag',
       name: 'Acquire Asset',
       description: 'Gain use of a rare or powerful asset (keg of gunpowder, specialist hireling, magical scroll, etc.)',
       available: true,
@@ -183,6 +194,7 @@ const StrychnineSyndicate: FactionModel = {
       minusOne: 'anything else'
     },
     {
+      icon: 'hourglass',
       name: 'Long Term Project',
       description: 'Make a test to make ticks on long term project clock. The number of dice is based on the tools at hand and the action taken 1-3: one segment, 4/5: two segments, 6: three segments, crit: five segments.',
       available: false,
@@ -190,6 +202,7 @@ const StrychnineSyndicate: FactionModel = {
       minusOne: ''
     },
     {
+      icon: 'bandage',
       name: 'Recovery',
       description: 'Get treatment for your harm.  Roll Tier and mark on your healing clock. 1-3: 1, 4/5: 2, 6: 3, Crit: 5',
       available: true,
@@ -197,6 +210,7 @@ const StrychnineSyndicate: FactionModel = {
       minusOne: ''
     },
     {
+      icon: 'beer',
       name: 'Indulge Vice',
       description: 'Roll 1d per 3 expended Resist (rounded up). Gain Resist equal to the highest number rolled. Overindulge if you would end up with more than 10 Resist.',
       available: true,
@@ -204,6 +218,7 @@ const StrychnineSyndicate: FactionModel = {
       minusOne: 'anything else'
     },
     {
+      icon: 'torch',
       name: 'Reveal Something',
       description: 'Describe a scene that tells us something about your character that fills in details or answers questions, then Mark XP',
       available: true,
@@ -260,6 +275,7 @@ const Thunderhead: FactionModel = {
   relationship: 0,
   downtime: [
     {
+      icon: 'bag',
       name: 'Acquire Asset',
       description: 'Gain use of a rare or powerful asset (keg of gunpowder, specialist hireling, magical scroll, etc.)',
       available: true,
@@ -267,6 +283,7 @@ const Thunderhead: FactionModel = {
       minusOne: 'anything else'
     },
     {
+      icon: 'hourglass',
       name: 'Long Term Project',
       description: 'Make a test to make ticks on long term project clock. The number of dice is based on the tools at hand and the action taken 1-3: one segment, 4/5: two segments, 6: three segments, crit: five segments.',
       available: true,
@@ -274,6 +291,7 @@ const Thunderhead: FactionModel = {
       minusOne: 'anything else'
     },
     {
+      icon: 'bandage',
       name: 'Recovery',
       description: 'Get treatment for your harm.  Roll Tier and mark on your healing clock. 1-3: 1, 4/5: 2, 6: 3, Crit: 5',
       available: false,
@@ -281,6 +299,7 @@ const Thunderhead: FactionModel = {
       minusOne: ''
     },
     {
+      icon: 'beer',
       name: 'Indulge Vice',
       description: 'Roll 1d per 3 expended Resist (rounded up). Gain Resist equal to the highest number rolled. Overindulge if you would end up with more than 10 Resist.',
       available: true,
@@ -288,6 +307,7 @@ const Thunderhead: FactionModel = {
       minusOne: 'anything else'
     },
     {
+      icon: 'torch',
       name: 'Reveal Something',
       description: 'Describe a scene that tells us something about your character that fills in details or answers questions, then Mark XP',
       available: true,
@@ -343,6 +363,7 @@ export const Blank: FactionModel = {
   relationship: 0,
   downtime: [
     {
+      icon: 'bag',
       name: 'Acquire Asset',
       description: 'Gain use of a rare or powerful asset (keg of gunpowder, specialist hireling, magical scroll, etc.)',
       available: false,
@@ -350,6 +371,7 @@ export const Blank: FactionModel = {
       minusOne: ''
     },
     {
+      icon: 'hourglass',
       name: 'Long Term Project',
       description: 'Make a test to make ticks on long term project clock. The number of dice is based on the tools at hand and the action taken 1-3: one segment, 4/5: two segments, 6: three segments, crit: five segments.',
       available: false,
@@ -357,6 +379,7 @@ export const Blank: FactionModel = {
       minusOne: ''
     },
     {
+      icon: 'bandage',
       name: 'Recovery',
       description: 'Get treatment for your harm.  Roll Tier and mark on your healing clock. 1-3: 1, 4/5: 2, 6: 3, Crit: 5',
       available: false,
@@ -364,6 +387,7 @@ export const Blank: FactionModel = {
       minusOne: ''
     },
     {
+      icon: 'beer',
       name: 'Indulge Vice',
       description: 'Roll 1d per 3 expended Resist (rounded up). Gain Resist equal to the highest number rolled. Overindulge if you would end up with more than 10 Resist.',
       available: true,
@@ -371,6 +395,7 @@ export const Blank: FactionModel = {
       minusOne: ''
     },
     {
+      icon: 'torch',
       name: 'Reveal Something',
       description: 'Describe a scene that tells us something about your character that fills in details or answers questions, then Mark XP',
       available: true,

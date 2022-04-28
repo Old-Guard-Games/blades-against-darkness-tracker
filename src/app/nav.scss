@@ -1,15 +1,21 @@
 nav {
-  height: 60px;
+  box-sizing: border-box;
+  height: 80px;
   background: #333;
   color: white;
   padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
   
   ul {
+    display: inline-block;
     margin: 15px 0;
     padding: 0 0 0 20px;
   }
 
-  li {
+  h1, li {
     display: inline-block;
     padding: 0 15px;
     border-right: 1px solid #999;

@@ -1,20 +1,30 @@
 {
   "files": {
-    "main.css": "/blades-against-darkness-tracker/static/css/main.34f5123d.css",
-    "main.js": "/blades-against-darkness-tracker/static/js/main.e8ca5f81.js",
+    "main.css": "/blades-against-darkness-tracker/static/css/main.51993da9.css",
+    "main.js": "/blades-against-darkness-tracker/static/js/main.c79f6eaf.js",
     "static/js/787.02e74bc8.chunk.js": "/blades-against-darkness-tracker/static/js/787.02e74bc8.chunk.js",
     "index.html": "/blades-against-darkness-tracker/index.html",
+    "static/media/bandage-roll-gold.svg": "/blades-against-darkness-tracker/static/media/bandage-roll-gold.aa4339e0f067fd21a2d836f4031d6c38.svg",
+    "static/media/bandage-roll-gray.svg": "/blades-against-darkness-tracker/static/media/bandage-roll-gray.0c93cc809fd586082f958584fa81ff62.svg",
     "static/media/bandage-roll(1).svg": "/blades-against-darkness-tracker/static/media/bandage-roll(1).3558b7a753f40f2c70c1354e447d1e69.svg",
+    "static/media/swap-bag-gold.svg": "/blades-against-darkness-tracker/static/media/swap-bag-gold.ab4bd99354c302024d0e679db3e1002f.svg",
+    "static/media/swap-bag-gray.svg": "/blades-against-darkness-tracker/static/media/swap-bag-gray.1c8d8b18360410af426f01527fc18f04.svg",
     "static/media/swap-bag(1).svg": "/blades-against-darkness-tracker/static/media/swap-bag(1).7d80805819e00c69e63b6dd704709130.svg",
+    "static/media/beer-stein-gold.svg": "/blades-against-darkness-tracker/static/media/beer-stein-gold.e37c31906375244cd05afeb9e59e57db.svg",
+    "static/media/beer-stein-gray.svg": "/blades-against-darkness-tracker/static/media/beer-stein-gray.1efac5b3decfae561c8a104e2888b2d1.svg",
     "static/media/beer-stein(1).svg": "/blades-against-darkness-tracker/static/media/beer-stein(1).b14e44f0f9e3372c1a2b563400996f0a.svg",
-    "static/media/sands-of-time.svg": "/blades-against-darkness-tracker/static/media/sands-of-time.3f1b38485ab5a01ef3fd6484121bcb93.svg",
+    "static/media/torch-gold.svg": "/blades-against-darkness-tracker/static/media/torch-gold.2f22c4b2c669b0ff950a41a368372d6b.svg",
+    "static/media/torch-gray.svg": "/blades-against-darkness-tracker/static/media/torch-gray.325bdbb920bc57768f9f2d1f0fe3693c.svg",
     "static/media/torch(1).svg": "/blades-against-darkness-tracker/static/media/torch(1).19e30d9e23dd166dcb509d40e7786b3e.svg",
-    "main.34f5123d.css.map": "/blades-against-darkness-tracker/static/css/main.34f5123d.css.map",
-    "main.e8ca5f81.js.map": "/blades-against-darkness-tracker/static/js/main.e8ca5f81.js.map",
+    "static/media/hourglass-gold.svg": "/blades-against-darkness-tracker/static/media/hourglass-gold.68b8890a127c0529713e3feed0bf5850.svg",
+    "static/media/hourglass-gray.svg": "/blades-against-darkness-tracker/static/media/hourglass-gray.9210ea32862bf2922b99f90e7d90e2c3.svg",
+    "static/media/hourglass.svg": "/blades-against-darkness-tracker/static/media/hourglass.bf7446cbfd9552d84676605e4e1f6ce1.svg",
+    "main.51993da9.css.map": "/blades-against-darkness-tracker/static/css/main.51993da9.css.map",
+    "main.c79f6eaf.js.map": "/blades-against-darkness-tracker/static/js/main.c79f6eaf.js.map",
     "787.02e74bc8.chunk.js.map": "/blades-against-darkness-tracker/static/js/787.02e74bc8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34f5123d.css",
-    "static/js/main.e8ca5f81.js"
+    "static/css/main.51993da9.css",
+    "static/js/main.c79f6eaf.js"
   ]
 }

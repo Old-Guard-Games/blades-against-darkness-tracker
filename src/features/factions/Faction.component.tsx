@@ -132,7 +132,7 @@ export const FactionMenuItem = ({faction}: {faction: FactionModel}) => {
       const divStyle = { width: '1.5em', height: '1.5em'};
       return (
       <div className="stacked-image" style={divStyle}>
-        <img key={index} alt={`${activity.icon} icon`} src={activity.minusOne ? grayIcons[activity.icon] : icons[activity.icon]} />
+        <img key={index} alt={`${activity.icon} icon`} src={icons[activity.icon]} />
         <img key={index} className={`${goldStatus}`} alt={`${activity.icon} gold icon`} src={goldIcons[activity.icon]} />
       </div>
     )});

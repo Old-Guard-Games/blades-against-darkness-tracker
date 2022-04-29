@@ -10,7 +10,6 @@ export interface ZoneModel {
 }
 
 export interface TitleAndDesc {
-  id: string;
   title: string;
   description: string;
   active?: boolean;
@@ -33,37 +32,34 @@ export const blankZone: (id: number) => ZoneModel = (id) => {
 }
 
 export const blankSprites: (baseId: number) => Sprite[] = (baseId) => {
-  const signifier = 's';
   return [
-    {id: `${baseId}${signifier}1`, title: '', description: ''},
-    {id: `${baseId}${signifier}2`, title: '', description: ''},
-    {id: `${baseId}${signifier}3`, title: '', description: ''},
-    {id: `${baseId}${signifier}4`, title: '', description: ''},
-    {id: `${baseId}${signifier}5`, title: '', description: ''},
-    {id: `${baseId}${signifier}6`, title: '', description: ''},
+    { title: '', description: ''},
+    { title: '', description: ''},
+    { title: '', description: ''},
+    { title: '', description: ''},
+    { title: '', description: ''},
+    { title: '', description: ''},
   ];
 }
 
 export const blankAwakening: (baseId: number) => Awakening[] = (baseId) => {
-  const signifier = 'a';
   return [
-    {id: `${baseId}${signifier}1`, title: '', description: ''},
-    {id: `${baseId}${signifier}2`, title: '', description: ''},
-    {id: `${baseId}${signifier}3`, title: '', description: ''},
-    {id: `${baseId}${signifier}4`, title: '', description: ''},
-    {id: `${baseId}${signifier}5`, title: '', description: ''},
-    {id: `${baseId}${signifier}6`, title: '', description: ''},
+    { title: '', description: ''},
+    { title: '', description: ''},
+    { title: '', description: ''},
+    { title: '', description: ''},
+    { title: '', description: ''},
+    { title: '', description: ''},
   ];
 }
 
 export const blankEntanglements: (baseId: number) => Entanglement[] = (baseId) => {
-  const signifier = 'e';
   return [
-    {id: `${baseId}${signifier}1`, title: '', description: ''},
-    {id: `${baseId}${signifier}2`, title: '', description: ''},
-    {id: `${baseId}${signifier}3`, title: '', description: ''},
-    {id: `${baseId}${signifier}4`, title: '', description: ''},
-    {id: `${baseId}${signifier}5`, title: '', description: ''},
-    {id: `${baseId}${signifier}6`, title: '', description: ''},
+    { title: '', description: ''},
+    { title: '', description: ''},
+    { title: '', description: ''},
+    { title: '', description: ''},
+    { title: '', description: ''},
+    { title: '', description: ''},
   ];
 }

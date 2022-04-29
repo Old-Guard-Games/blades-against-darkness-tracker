@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import {
   HashRouter as Router,
   Routes,
@@ -15,6 +15,7 @@ import { Nav } from './app/nav';
 import { FactionList } from './features/factions/FactionList';
 import { EditZone } from './features/zones/EditZone';
 import { ZoneList } from './features/zones/ZoneList';
+import { EditFaction } from './features/factions/EditFaction';
 
 function App() {
   const isProduction = process.env.NODE_ENV === 'production';
@@ -38,9 +39,11 @@ function App() {
     }
   }
 
-  const checkStatus = async () => {
+  const checkStatus = useCallback( async () => {
     try {
-      const resp = await fetch(`${isProduction ? packageInfo.homepage : (packageInfo as any).localHomepage}meta.json?${new Date().getTime()}`, {cache: 'no-cache'});
+      const basePath = isProduction ? packageInfo.homepage : (packageInfo as any).localHomepage;
+      const path = `${basePath}meta.json?${new Date().getTime()}`;
+      const resp = await fetch(path, {cache: 'no-cache'});
       const {version: metaVersion} = await resp.json();
       const diff = compare(packageInfo.version, metaVersion);
       const shouldRefresh = diff < 0;
@@ -66,11 +69,11 @@ function App() {
         isLatestVersion: true
       });
     }
-  }
+  },[isProduction]);
 
   useEffect(() => {
     checkStatus();
-  },[]);
+  },[checkStatus]);
 
   if (loadingStatus.loading) {
     return (<></>);
@@ -88,6 +91,14 @@ function App() {
             <Route
               path="/"
               element={ <FactionList /> }
+              />
+            <Route
+              path="/factions"
+              element={ <FactionList /> }
+              />
+            <Route
+              path="/factions/edit"
+              element={ <EditFaction /> }
               />
             <Route
               path="/zones"

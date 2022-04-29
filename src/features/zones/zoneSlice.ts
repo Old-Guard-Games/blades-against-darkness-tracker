@@ -24,4 +24,12 @@ const zoneSlice = createSlice({
 
 export default zoneSlice.reducer;
 
-export const selectAllZones = (state: AppState) => state.zones.data;
+export const selectAllZones = (state: AppState) => state.zones.data.slice()
+  .sort((a: ZoneModel,b: ZoneModel) => {
+    const trimmedA = a.name.replace('The ','');
+    const trimmedB = b.name.replace('The ','');
+    if (trimmedA < trimmedB) {
+      return -1;
+    }
+    return 1;
+  });

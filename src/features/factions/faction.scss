@@ -47,3 +47,75 @@
     }
   }
 }
+
+// editing things
+.edit-faction {
+  padding: 80px 20px 20px 20px;
+
+  label,input,textarea {
+    width: 50%;
+    display: block;
+  }
+
+  input, textarea {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    height: 12em;
+  }
+
+  input[type='checkbox'] {
+    padding: 0;
+    width: auto;
+    display: inline-block;
+    margin-left: 1em;
+  }
+
+  .downtime-activity {
+    border-bottom: 1px solid #555;
+    padding-left: 25px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    h4 {
+      margin-left: -25px;
+    }
+  }
+}
+
+.faction {
+  position: relative;
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.edit-faction .elements,
+.faction .elements
+ {
+  .single-element {
+    padding-left: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.element-number {
+  display: block;
+  position: absolute;
+  left: 20px;
+  font-size: x-large; 
+  
+}

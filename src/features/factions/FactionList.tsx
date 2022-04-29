@@ -5,18 +5,10 @@ import { FactionModel } from './Faction.model';
 
 import { Faction, FactionMenuItem } from './Faction.component';
 import { LeftSelect, LeftSelectProps } from '../../components/LeftSelect';
+import { selectAllFactions } from './factionSlice';
 
 export const FactionList = () => {
-  const factions = useSelector((state: any) => state.factions.data);
-
-  const sorted = factions.slice().sort((a: FactionModel,b: FactionModel) => {
-    const trimmedA = a.name.replace('The ','');
-    const trimmedB = b.name.replace('The ','');
-    if (trimmedA < trimmedB) {
-      return -1;
-    }
-    return 1;
-  });
+  const factions = useSelector(selectAllFactions);
 
   const menuRender = (item: FactionModel, index: number) => (
     <FactionMenuItem key={index} faction={item} />
@@ -28,7 +20,7 @@ export const FactionList = () => {
 
   const lsProps: LeftSelectProps<FactionModel> = {
     title: 'Factions',
-    items: sorted,
+    items: factions,
     menuRender,
     itemRender
   }

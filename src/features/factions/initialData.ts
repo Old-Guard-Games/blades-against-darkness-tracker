@@ -42,7 +42,7 @@ const WhiteHand: FactionModel = {
     {
       icon: 'beer',
       name: 'Indulge Vice',
-      description: 'Roll 1d per 3 expended Resist (rounded up). Gain Resist equal to the highest number rolled. Overindulge if you would end up with more than 10 Resist.',
+      description: 'Roll 1d per 3 expended Grit (rounded up). Gain Grit equal to the highest number rolled. Overindulge if you would end up with more than 10 Grit.',
       available: true,
       plusOne: 'stupor',
       minusOne: 'anything else'
@@ -62,22 +62,22 @@ const WhiteHand: FactionModel = {
       {
         segments: 8,
         progress: 0,
-        nextStep: 'Establish base in Chimeran Wastes'
+        description: 'Establish base in Chimeran Wastes'
       },
       {
         segments: 8,
         progress: 0,
-        nextStep: 'Weaken the Falconers'
+        description: 'Weaken the Falconers'
       },
       {
         segments: 8,
         progress: 0,
-        nextStep: ''
+        description: ''
       },
       {
         segments: 8,
         progress: 0,
-        nextStep: ''
+        description: ''
       }
     ]
   }
@@ -125,7 +125,7 @@ const SilverFlame: FactionModel = {
     {
       icon: 'beer',
       name: 'Indulge Vice',
-      description: 'Roll 1d per 3 expended Resist (rounded up). Gain Resist equal to the highest number rolled. Overindulge if you would end up with more than 10 Resist.',
+      description: 'Roll 1d per 3 expended Grit (rounded up). Gain Grit equal to the highest number rolled. Overindulge if you would end up with more than 10 Grit.',
       available: true,
       plusOne: 'weird',
       minusOne: ''
@@ -145,22 +145,22 @@ const SilverFlame: FactionModel = {
       {
         segments: 8,
         progress: 0,
-        nextStep: 'Communication link with home'
+        description: 'Communication link with home'
       },
       {
         segments: 8,
         progress: 0,
-        nextStep: ''
+        description: ''
       },
       {
         segments: 8,
         progress: 0,
-        nextStep: ''
+        description: ''
       },
       {
         segments: 8,
         progress: 0,
-        nextStep: ''
+        description: ''
       }
     ]
   }
@@ -212,7 +212,7 @@ const StrychnineSyndicate: FactionModel = {
     {
       icon: 'beer',
       name: 'Indulge Vice',
-      description: 'Roll 1d per 3 expended Resist (rounded up). Gain Resist equal to the highest number rolled. Overindulge if you would end up with more than 10 Resist.',
+      description: 'Roll 1d per 3 expended Grit (rounded up). Gain Grit equal to the highest number rolled. Overindulge if you would end up with more than 10 Grit.',
       available: true,
       plusOne: 'stupor, gambling, pleasure',
       minusOne: 'anything else'
@@ -232,22 +232,22 @@ const StrychnineSyndicate: FactionModel = {
       {
         segments: 8,
         progress: 0,
-        nextStep: 'Establish a base in Chimeran Wastes'
+        description: 'Establish a base in Chimeran Wastes'
       },
       {
         segments: 8,
         progress: 0,
-        nextStep: ''
+        description: ''
       },
       {
         segments: 8,
         progress: 0,
-        nextStep: ''
+        description: ''
       },
       {
         segments: 8,
         progress: 0,
-        nextStep: ''
+        description: ''
       }
     ]
   }
@@ -301,7 +301,7 @@ const Thunderhead: FactionModel = {
     {
       icon: 'beer',
       name: 'Indulge Vice',
-      description: 'Roll 1d per 3 expended Resist (rounded up). Gain Resist equal to the highest number rolled. Overindulge if you would end up with more than 10 Resist.',
+      description: 'Roll 1d per 3 expended Grit (rounded up). Gain Grit equal to the highest number rolled. Overindulge if you would end up with more than 10 Grit.',
       available: true,
       plusOne: 'gambling, pleasure, stupor',
       minusOne: 'anything else'
@@ -316,37 +316,128 @@ const Thunderhead: FactionModel = {
     }
   ],
   goals: {
-    longTerm: '',
+    longTerm: 'Control territory that is free of invader influence',
     intermediate: [
       {
         segments: 8,
         progress: 0,
-        nextStep: ''
+        description: 'Establish base in Chimeran Wastes'
       },
       {
         segments: 8,
         progress: 0,
-        nextStep: ''
+        description: ''
       },
       {
         segments: 8,
         progress: 0,
-        nextStep: ''
+        description: ''
       },
       {
         segments: 8,
         progress: 0,
-        nextStep: ''
+        description: ''
       }
     ]
   }
 }
 
+const EmissariesOfAnkhutet = {
+  "id": 5,
+  "name": "Emissaries of Ankhutet",
+  "tier": "1",
+  "description": "The cult dedicated to Ankhutet sprang up relatively recently, drawing those who already practiced the godling's ideals: Peace, Healing, and Growth. As such, the cult is primarily comprised of wandering healers, gardeners, and apothecaries. They readily exchange their services for nominal donations, though they are sometimes known to accept donations in the form of services rendered. The Ironwood chapter of the cult has grown quickly in both following and funding, owing to Growthmother Antesana's charismatic evangelism and shrewd management. Some prominent residents of Ironwood have voiced their concerned that the Emissaries are poisoning the minds of the youth with promises of an age of peace and complacency. They have an ongoing disagreement with a number of aggressive groups, such as the Strychnine Syndicate and The Falconers. ",
+  "npcs": [
+    "Growthmother Antesana (leader, charismatic, shrewd)",
+    "Greenbrother Goras (botanist, apothecary, former Warden of the Yeremy)"
+  ],
+  "assets": "Healers, gardeners, apothecaries, as well as knowledge of medicine, herbalism, and cultivation",
+  "allies": [
+    "Ironwood Council",
+    "The Thunderhead"
+  ],
+  "enemies": [
+    "Strychnine Syndicate",
+    "The Falconers"
+  ],
+  "coffers": 8,
+  "relationship": 0,
+  "downtime": [
+    {
+      "name": "Acquire Asset",
+      "icon": "bag",
+      "description": "Gain use of a rare or powerful asset (keg of gunpowder, specialist hireling, magical scroll, etc.)",
+      "available": true,
+      "plusOne": "Herbs, Medical supplies",
+      "minusOne": "Anything else"
+    },
+    {
+      "name": "Long Term Project",
+      "icon": "hourglass",
+      "description": "Make a test to make ticks on long term project clock. The number of dice is based on the tools at hand and the action taken 1-3: one segment, 4/5: two segments, 6: three segments, crit: five segments.",
+      "available": false,
+      "plusOne": "",
+      "minusOne": ""
+    },
+    {
+      "name": "Recovery",
+      "icon": "bandage",
+      "description": "Get treatment for your harm.  Roll Tier and mark on your healing clock. 1-3: 1, 4/5: 2, 6: 3, Crit: 5",
+      "available": true,
+      "plusOne": "Physical injuries",
+      "minusOne": ""
+    },
+    {
+      "name": "Indulge Vice",
+      "icon": "beer",
+      "description": "Roll 1d per 3 expended Grit (rounded up). Gain Grit equal to the highest number rolled. Overindulge if you would end up with more than 10 Grit.",
+      "available": true,
+      "plusOne": "Obligation, Faith",
+      "minusOne": "Anything else"
+    },
+    {
+      "name": "Reveal Something",
+      "icon": "torch",
+      "description": "Describe a scene that tells us something about your character that fills in details or answers questions, then Mark XP",
+      "available": true,
+      "plusOne": "",
+      "minusOne": ""
+    }
+  ],
+  "goals": {
+    "longTerm": "Become the dominant congregation in Ironwood",
+    "intermediate": [
+      {
+        "segments": 6,
+        "progress": 0,
+        "nextStep": "Acquire artifacts of Ankhutet"
+      },
+      {
+        "segments": 8,
+        "progress": 0,
+        "nextStep": "Establish nursery in Rendwell Timberland"
+      },
+      {
+        "segments": 8,
+        "progress": 0,
+        "nextStep": ""
+      },
+      {
+        "segments": 8,
+        "progress": 0,
+        "nextStep": ""
+      }
+    ]
+  }
+}
+
+
 const factions = [
   WhiteHand,
   SilverFlame,
   StrychnineSyndicate,
-  Thunderhead
+  Thunderhead,
+  EmissariesOfAnkhutet
 ];
 export default factions;
 
@@ -389,7 +480,7 @@ export const Blank: FactionModel = {
     {
       icon: 'beer',
       name: 'Indulge Vice',
-      description: 'Roll 1d per 3 expended Resist (rounded up). Gain Resist equal to the highest number rolled. Overindulge if you would end up with more than 10 Resist.',
+      description: 'Roll 1d per 3 expended Grit (rounded up). Gain Grit equal to the highest number rolled. Overindulge if you would end up with more than 10 Grit.',
       available: true,
       plusOne: '',
       minusOne: ''
@@ -409,22 +500,22 @@ export const Blank: FactionModel = {
       {
         segments: 8,
         progress: 0,
-        nextStep: ''
+        description: ''
       },
       {
         segments: 8,
         progress: 0,
-        nextStep: ''
+        description: ''
       },
       {
         segments: 8,
         progress: 0,
-        nextStep: ''
+        description: ''
       },
       {
         segments: 8,
         progress: 0,
-        nextStep: ''
+        description: ''
       }
     ]
   }

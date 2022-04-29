@@ -23,4 +23,17 @@ const factionsSlice = createSlice({
 
 export default factionsSlice.reducer;
 
-export const selectAllFactions = (state: AppState) => state.factions.data
+export const selectAllFactions = (state: AppState) => {
+  const data = state.factions.data.slice();
+  const sorted = data.sort((a: FactionModel,b: FactionModel) => {
+    const trimmedA = a.name.replace('The ','');
+    const trimmedB = b.name.replace('The ','');
+    if (trimmedA < trimmedB) {
+      return -1;
+    }
+    return 1;
+  });
+
+  console.log(sorted);
+  return sorted;
+};

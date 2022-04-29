@@ -1,7 +1,18 @@
 .edit-zone {
+  padding: 80px 20px 20px 20px;
+
   label,input,textarea {
     width: 50%;
     display: block;
+  }
+
+  input, textarea {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    height: 12em;
   }
 }
 

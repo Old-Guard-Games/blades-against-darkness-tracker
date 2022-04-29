@@ -28,10 +28,10 @@ const DowntimeList = ({activities}: {activities: DowntimeActivity[]}) => {
   const renderedactivities = activities.map(activity => {
     const {name, icon, description, available, plusOne, minusOne} = activity;
     const goldStatus = plusOne ? (minusOne ? 'half' : 'full') : 'hide';
-    const divStyle = { width: '1.5em', height: '1.5em'};
+    const divStyle = { width: '1.5em', height: '1.5em', display: 'inline-block'};
     return available ? (
       <div className='downtime-activity'>
-        <h4>
+        <h4 style={{display:'flex'}}>
           <div className="stacked-image" style={divStyle}>
             <img alt={`${icon} icon`} src={icons[icon]} />
             <img className={`${goldStatus}`} alt={`${icon} gold icon`} src={goldIcons[icon]} />
@@ -132,7 +132,7 @@ export const FactionMenuItem = ({faction}: {faction: FactionModel}) => {
       const divStyle = { width: '1.5em', height: '1.5em'};
       return (
       <div className="stacked-image" style={divStyle}>
-        <img key={index} alt={`${activity.icon} icon`} src={icons[activity.icon]} />
+        <img key={index} alt={`${activity.icon} icon`} src={activity.minusOne ? grayIcons[activity.icon] : icons[activity.icon]} />
         <img key={index} className={`${goldStatus}`} alt={`${activity.icon} gold icon`} src={goldIcons[activity.icon]} />
       </div>
     )});

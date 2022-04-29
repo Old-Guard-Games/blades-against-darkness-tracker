@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/blades-against-darkness-tracker/static/css/main.51993da9.css",
-    "main.js": "/blades-against-darkness-tracker/static/js/main.c79f6eaf.js",
+    "main.css": "/blades-against-darkness-tracker/static/css/main.06101dc4.css",
+    "main.js": "/blades-against-darkness-tracker/static/js/main.1b1c90e2.js",
     "static/js/787.02e74bc8.chunk.js": "/blades-against-darkness-tracker/static/js/787.02e74bc8.chunk.js",
     "index.html": "/blades-against-darkness-tracker/index.html",
     "static/media/bandage-roll-gold.svg": "/blades-against-darkness-tracker/static/media/bandage-roll-gold.aa4339e0f067fd21a2d836f4031d6c38.svg",
@@ -19,12 +19,12 @@
     "static/media/hourglass-gold.svg": "/blades-against-darkness-tracker/static/media/hourglass-gold.68b8890a127c0529713e3feed0bf5850.svg",
     "static/media/hourglass-gray.svg": "/blades-against-darkness-tracker/static/media/hourglass-gray.9210ea32862bf2922b99f90e7d90e2c3.svg",
     "static/media/hourglass.svg": "/blades-against-darkness-tracker/static/media/hourglass.bf7446cbfd9552d84676605e4e1f6ce1.svg",
-    "main.51993da9.css.map": "/blades-against-darkness-tracker/static/css/main.51993da9.css.map",
-    "main.c79f6eaf.js.map": "/blades-against-darkness-tracker/static/js/main.c79f6eaf.js.map",
+    "main.06101dc4.css.map": "/blades-against-darkness-tracker/static/css/main.06101dc4.css.map",
+    "main.1b1c90e2.js.map": "/blades-against-darkness-tracker/static/js/main.1b1c90e2.js.map",
     "787.02e74bc8.chunk.js.map": "/blades-against-darkness-tracker/static/js/787.02e74bc8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.51993da9.css",
-    "static/js/main.c79f6eaf.js"
+    "static/css/main.06101dc4.css",
+    "static/js/main.1b1c90e2.js"
   ]
 }

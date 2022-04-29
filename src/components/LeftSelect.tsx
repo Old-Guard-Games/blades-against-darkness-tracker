@@ -1,7 +1,6 @@
 import React, { ReactElement, useState } from 'react';
 
 import './leftSelect.scss';
-import packageInfo from '../../package.json';
 
 export type LeftSelectProps<Type> = {
   items: Type[];
@@ -40,7 +39,6 @@ export function LeftSelect<Type> ({items, title, menuRender, itemRender}: LeftSe
         <ul>
           {renderedMenuItems}
         </ul>
-        <p className="version">v{packageInfo.version}</p>
       </menu>
       <section>
         {renderedActive}

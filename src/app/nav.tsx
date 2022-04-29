@@ -2,6 +2,7 @@ import React from 'react';
 import {Link, useMatch, useResolvedPath} from 'react-router-dom';
 
 import type { LinkProps } from 'react-router-dom';
+import packageInfo from '../../package.json';
 
 import './nav.scss';
 
@@ -14,6 +15,7 @@ export const Nav = () => {
         <NavItem to='/zones'>Zones</NavItem>
 
       </ul>
+      <p className="version">v{packageInfo.version}</p>
     </nav>
   )
 }
